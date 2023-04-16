@@ -1,17 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-section{
+
+section {
     width: 100%;
     height: 100vh;
-    background-image: url('./resim/istockphoto-458657239-612x612.jpg');
+    background-image: url('./resim/nike1.jpg');
     background-size: cover;
     background-position: center;
 }
-.table{
+
+.table {
     display: flex;
     position: fixed;
     align-items: center;
@@ -24,36 +26,227 @@ section{
     z-index: 100;
     background-image: url('./resim/nike.avif');
 }
-.table h1{
+
+.table h1 {
     color: white;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.e{
-    color: rgb(182, 22, 163);
+
+.e {
+    color: rgb(30, 137, 187);
     text-decoration: underline;
 }
-.table ul{
+
+.table ul {
     list-style: none;
 }
-.table ul li{
+
+.table ul li {
     display: inline-block;
     margin: 15px 15px;
-} 
-.table ul li a{
+}
+
+.table ul li a {
     text-decoration: none;
     color: azure;
     transition: 0.2;
 }
-.table ul li a:hover{
-    color:rgb(172, 123, 0)
+
+.table ul li a:hover {
+    color: rgb(30, 137, 187);
 }
-.icon i{
+
+.icon i {
     color: white;
     cursor: pointer;
     margin: 0 4px;
     transition: 0.2;
     font-size: 18px;
 }
-.icon i:hover{
-    color:rgb(172, 123, 0) ;
+
+.icon i:hover {
+    color: rgb(30, 137, 187);
+}
+
+.coll {
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 42px;
+    color: white;
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+.lorem {
+    width: 55%;
+    height: 20%;
+    margin-left: 5%;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}
+
+
+
+.but1 {
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 80px;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: 18%;
+    position: absolutes;
+    padding-top: 5px 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-left: 12%;
+    cursor: pointer;   /*    >>>>--qalib     */
+}
+
+.but1:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+.buy {
+    display: inline-block;
+}
+
+.produc {
+    width: 100%;
+    height: 150vh;
+    padding: 25px 0;
+}
+
+.produc h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+    font-size: 60px;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.produc .box {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+}
+
+.produc .box .card {
+
+    width: 260px;
+    height: 400px;
+    padding: 10px 20px;
+    background: rgb(247, 247, 247);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+.produc .box .card img {
+    margin-left: 30px;
+}
+
+.box img {
+    width: 150px;
+}
+
+.produc .box .card h2 {
+    text-transform: uppercase;
+}
+
+.produc .box .card p {
+    opacity: 0.8;
+}
+
+.produc .box .card :nth-child(4) i {
+    color: rgb(30, 137, 187);
+    position: relative;
+}
+
+.produc .box .card :nth-child(5) a {
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    width: 140px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: -72px;
+    padding: 12px 10px;
+    background-color: black;
+    border-radius: 6px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 10px;
+}
+
+
+.produc .box .card :nth-child(3) h2 {
+    position: relative;
+}
+
+.produc .box .card :nth-child(3) p {
+    margin-top: 10px;
+}
+
+.produc .box .card :nth-child(3) h3 {
+    margin-top: 10px;
+}
+
+.smal-card{
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    margin-left: 4px;
+    margin: 10px 0;
+    transform: translateX(-20px);
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.smal-card:hover{
+    transform: translateX(2px);
+    cursor:pointer;
+    opacity: 1;
+}
+
+.smal-card i{
+    border: 2px solid rgb(148, 148, 148);
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.smal-card i:hover{
+    color: rgb(30, 137, 187);
+}
+/*   About   */
+
+.about{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+}
+.about h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
